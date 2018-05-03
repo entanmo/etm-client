@@ -1,0 +1,57 @@
+{
+  "copyright": "COPYRIGHT ⓒ 2016 ALL RIGHTS RESERVED",
+  "directories": {
+    "buildResources": "./dist",
+    //构建目录
+    "output": "./Release",
+    //输出目录
+    "app": "./dist"
+    //前端目录
+  },
+  "nsis": {
+    //打包配置
+    //    "installerIcon": "Logo.ico",
+    "oneClick": false,
+    //是否一键安装
+    "allowToChangeInstallationDirectory": true,
+    //是否允许更改安装目录
+    "perMachine": true,
+    "include": ""
+  },
+  "win": {
+    //应用图标
+    //    "icon": "app/img/Logo",
+    "requestedExecutionLevel": "requireAdministrator"
+    //需要管理员权限
+  },
+  "mac": {//mac打包配置
+    //应用图标
+    "icon": "build/icon.icns"
+  },
+  "nodeGypRebuild": false,
+  //打包之前是否构建
+  "portable": {
+    "requestExecutionLevel": "user"
+    //安装包执行权限
+  },
+  "npmArgs": [
+  ],
+  "npmRebuild": false,
+  //是否需要npm 构建
+  "electronDownload": {
+    //electron 镜像
+//    "mirror": "https://registry.npm.taobao.org"
+  },
+  //  "beforeBuild": "./beforeBuild.js",
+  //打成安装包之前的操作
+  //    "afterPack": "./afterPack.js",
+  //安装之前执行
+  "asar": true,
+  //是否使用安全压缩包
+  "asarUnpack": [
+    //    "./imgs",
+    //    "./fonts",
+    //    "./node_modules",
+    //    "./Logo.ico"
+  ]
+}
