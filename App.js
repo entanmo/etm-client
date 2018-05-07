@@ -1,8 +1,8 @@
 const {app, BrowserWindow} = require('electron')
 
 let MainWindow// 声明主窗体
-const WinUrl =`file://${__dirname}/index.html`
-
+// const WinUrl =`file://${__dirname}/index.html`
+const WinUrl = 'http://localhost:8081'
 /**
  * 创建窗体
  * @constructor
@@ -10,10 +10,10 @@ const WinUrl =`file://${__dirname}/index.html`
 function CreateWindow () {
   // const {width, height} = screen.getPrimaryDisplay().workAreaSize// 获取屏幕工作区
   MainWindow = new BrowserWindow({// 创建主窗体
-    width: 1440,
-    height: 900,
-    minWidth: 1440,
-    minHeight: 900,
+    width: 1366,
+    height: 768,
+    minWidth: 1366,
+    minHeight: 768,
     // frame: false,
     center: true,
     webPreferences: {webSecurity: false, nativeWindowOpen: true}

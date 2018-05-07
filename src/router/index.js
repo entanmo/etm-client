@@ -89,7 +89,7 @@ Vue.use(Router)
 
 const router = new Router({
   linkActiveClass: 'in',
-  mode: 'history',
+  // mode: 'history',
   routes: [
     {
       path: '/',
@@ -179,7 +179,7 @@ const router = new Router({
 })
 
 router.beforeEach((to, from, next) => {
-  if (localStorage.getItem('etmsecret') || 
+  if (localStorage.getItem('etmsecret') ||
       sessionStorage.getItem('etmsecret')
     ) {
       next()
@@ -190,7 +190,7 @@ router.beforeEach((to, from, next) => {
         next({ path: '/login' })
       }
     }
-  
+
 })
 
 export default router

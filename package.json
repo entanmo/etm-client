@@ -4,7 +4,6 @@
   "description": "A Vue.js project",
   "author": "tian0o0 <839862975@qq.com>",
   "main": "App.js",
-  "productName": "产品名称",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
@@ -42,7 +41,6 @@
     "css-loader": "^0.28.0",
     "electron": "^1.8.4",
     "electron-builder": "^19.46.9",
-    "electron-packager": "^10.1.0",
     "eslint": "^4.15.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-friendly-formatter": "^3.0.0",

@@ -123,7 +123,7 @@ const webpackConfig = merge(baseWebpackConfig, {
       },
       {//复制package.json文件
         from: path.resolve(__dirname, '../package4build.json'),
-        to: config.build.assetsRoot+'package.json',
+        to: config.build.assetsRoot+'/package.json',
         // ignore: ['.*']
       }
     ])
