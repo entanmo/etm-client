@@ -1,0 +1,56 @@
+{
+  "productName": "etm-wallet",
+  "copyright": "COPYRIGHT ⓒ 2018 ALL RIGHTS RESERVED",
+  "appId": "com.electron.app",
+  "directories": {
+    //构建目录
+    "buildResources": "./dist",
+    //输出目录
+    "output": "./Release",
+    //前端目录
+    "app": "./dist"
+  },
+  "nsis": {
+    "installerIcon": "./build/fav.ico",
+    //是否一键安装
+    "oneClick": false,
+    //是否允许更改安装目录
+    "allowToChangeInstallationDirectory": true,
+    "perMachine": true,
+    "include": ""
+  },
+  "win": {
+    "icon": "./build/fav.ico",
+    //需要管理员权限
+    "requestedExecutionLevel": "requireAdministrator"
+  },
+  "mac": {//mac打包配置
+    "icon": "build/fav.icns"
+  },
+  //打包之前是否构建
+  "nodeGypRebuild": false,
+  "portable": {
+    //安装包执行权限
+    "requestExecutionLevel": "user"
+  },
+  "npmArgs": [
+  ],
+  //是否需要npm构建
+  "npmRebuild": false,
+  "electronDownload": {
+    //electron 镜像
+//"mirror": "https://registry.npm.taobao.org"
+  },
+  //  "beforeBuild": "./beforeBuild.js",
+  //打成安装包之前的操作
+  //    "afterPack": "./afterPack.js",
+  //安装之前执行
+  "asar": true,
+  //是否使用安全压缩包
+  "asarUnpack": [
+    //    "./imgs",
+    //    "./fonts",
+    //    "./node_modules",
+    //    "./Logo.ico"
+  ]
+}
